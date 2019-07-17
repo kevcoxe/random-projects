@@ -1,6 +1,8 @@
 
 flask-api/venv
+
 react-web-app/node_modules
+react-web-app/.env
 
 venv/
 node_modules/
