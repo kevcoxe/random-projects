@@ -2,14 +2,12 @@
 from flask import Flask
 
 from api.route_api import load_api as load_route_api
+from api.info_api import load_api as load_info_api
 
 
 def load_api(app):
     load_route_api(app)
-
-    @app.route('/api')
-    def hello_world():
-        return 'Hello World!'
+    load_info_api(app)
 
 
 def run(web_type):
