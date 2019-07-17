@@ -1,11 +1,11 @@
 
-from flask import Flask, render_template
+from flask import Flask
+
+from api.route_api import load_api as load_route_api
 
 
 def load_api(app):
-    @app.route('/')
-    def index():
-        return render_template("index.html")
+    load_route_api(app)
 
     @app.route('/api')
     def hello_world():
