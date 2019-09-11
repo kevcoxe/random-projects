@@ -27,12 +27,13 @@ def run(web_type):
     load_api(app)
 
     app.run(
-        host='0.0.0.0',
-        port=8000,
+        host='127.0.0.1',
+        port=8080,
         debug=True,
     )
 
 
 if __name__ == '__main__':
-    WEB_APP_TYPE = "react"
+    # WEB_APP_TYPE = "react"
+    WEB_APP_TYPE = None
     run(WEB_APP_TYPE)

@@ -1,0 +1,14 @@
+<html>
+    <head>
+
+    </head>
+
+    <body>
+        <h1>Have you seen any of these people?</h1>
+
+        {% for face in faces %}
+          <img src="{{face['src']}}" alt="face">
+        {% endfor %}
+
+    </body>
+</html>

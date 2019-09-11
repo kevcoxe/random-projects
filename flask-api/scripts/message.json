@@ -1,0 +1,8 @@
+{
+    "name": "Do something",
+    "instructions": "echo 'yolo'",
+    "images": [
+        "in.png",
+        "out.png"
+    ]
+}
